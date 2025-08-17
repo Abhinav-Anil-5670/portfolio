@@ -165,13 +165,13 @@ const App = () => {
 
     
     const handleInputChange = (e) => {
-        setInput(e.target.value.trim());
+        setInput(e.target.value);
     };
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
         if (input.trim() !== '') {
-            handleCommand(input);
+            handleCommand(input.trim());
         }
         setInput('');
     };
