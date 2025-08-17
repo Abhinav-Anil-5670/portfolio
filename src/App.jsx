@@ -165,7 +165,7 @@ const App = () => {
 
     
     const handleInputChange = (e) => {
-        setInput(e.target.value);
+        setInput(e.target.value.trim());
     };
 
     const handleFormSubmit = (e) => {
