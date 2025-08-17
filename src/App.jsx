@@ -19,7 +19,7 @@ const App = () => {
     
     const WelcomeMessage = () => (
         <div className="mb-4">
-            <p className="text-lg">Welcome to my command-line portfolio.</p>
+            <p className="text-lg">Welcome to my portfolio.</p>
             <p className="text-lg">&nbsp;</p>
             <p>I build intuitive and performant experiences for the web.</p>
             <p>Get started by typing `help` to see what you can do.</p>
@@ -198,7 +198,7 @@ const App = () => {
                     <div key={index} className="mb-2">
                         {item.command && (
                             <div className="flex items-center">
-                                <span className="text-green-400">Abhinav@portfolio:{item.path}$</span>
+                                <span className="text-green-400">abhinav@portfolio:{item.path}$</span>
                                 <span className="ml-2">{item.command}</span>
                             </div>
                         )}
@@ -208,7 +208,7 @@ const App = () => {
 
                 
                 <form onSubmit={handleFormSubmit} className="flex items-center">
-                    <span className="text-green-400">Abhinav@portfolio:{currentPath}$</span>
+                    <span className="text-green-400">abhinav@portfolio:{currentPath}$</span>
                     <input
                         ref={inputRef}
                         id="terminal-input"
